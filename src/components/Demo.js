@@ -1,19 +1,16 @@
-import React from 'react'
+//import logo from './logo.svg';
+//import { Route } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
+import { Content } from './components/Content';
 import { Navbar2 } from './components/Navbar2';
-import {Content } from './components/Content';
-import {ShopingCart} from './components/ShopingCart';
+import { ShopingCart } from './components/ShopingCart';
 function App() {
-  return (
-    <div>
+    return(<div>
         <Navbar2/>
         <Switch>
             <Route path="/shopingcart" component={ShopingCart}/>
             <Route path="/" component={Content}/>
-
         </Switch>
-    </div>
-  )
+    </div>);
 }
-
 export default App;
